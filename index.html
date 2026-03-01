@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>pa mi amo</title>
+</head>
+<body>
+  <h2> Preguntas pa mi amo <3 </h2>
+
+  <p>olapo, como te llama mi amo?</p>
+  <input type="text" id="nombre">
+
+  <p>cua es tu comida favorita?</p>
+  <input type="text" id="comida">
+
+  <br><br>
+  <button onclick="responder()">Enviar</button>
+
+  <p id="resultado"></p>
+
+  <script>
+    function responder() {
+      const nombre = document.getElementById("nombre").value;
+      const comida = document.getElementById("comida").value;
+
+      document.getElementById("resultado").innerHTML =
+        nombre + "? , qué monito nombre <br><br>" +
+        "A mí también me encantan " + comida + " mi amo";
+    }
+  </script>
+</body>
+</html>
